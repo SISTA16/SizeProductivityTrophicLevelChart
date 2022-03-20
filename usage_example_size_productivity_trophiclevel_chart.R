@@ -1,13 +1,14 @@
 # general settings
-rm(list=ls(all=TRUE)) # clear previous variables etc
+#rm(list=ls(all=TRUE)) # clear previous variables etc
 options(digits=3) # displays all numbers with three significant digits as default
 graphics.off() # close graphics windows from previous sessions
 
-source("size_productivity_trophiclevel_chart_v4.R")
+source("size_productivity_trophiclevel_chart.R")
 setwd("./")
 #input file (optional)
 file = "./BioDiv_14.csv"
 order.age.file = "./OrderAge.csv"
+shapesToDisplay.file = "./shapesToDisplay.csv"
 
 #input data:
 
@@ -37,3 +38,9 @@ sptchart(file=file,axes.labels=axes.labels)
 
 #example 6 - produce the chart with custom order-age file
 sptchart(file=file,order.age.file=order.age.file)
+
+#example 7 - display shapes
+sptchart(file=file,shapesTodisplayFile = shapesToDisplay.file)
+
+#example 8 - display shapes and save
+sptchart(file=file,shapesTodisplayFile = shapesToDisplay.file, save.plot=T)

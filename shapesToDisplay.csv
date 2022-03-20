@@ -1,0 +1,12 @@
+size,productivity,trophic_level,shape,demersal,pelagic,reef,deepwater
+Small,High,Herbivores,fusiform,Y,,,
+Medium,Medium,Omnivores,elongated,,,Y,
+Large,Low,Low-level predators,shortdeep,,,,Y
+Medium,Very low,Mid-level predators,eel-like,,Y,,
+Very large,Medium,Top predators,ray,Y,,,
+Large,Low,Top predators,shark,,,Y,
+Small,Low,Low-level predators,seahorse,Y,,,
+Large,Medium,Mid-level predators,chimaera,,,,Y
+Large,Low,Low-level predators,shortdeep,Y,,,
+Medium,Medium,Low-level predators,chimaera,Y,,,
+Small,Very low,Herbivores,fusiform,,Y,,
