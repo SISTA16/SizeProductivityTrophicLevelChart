@@ -4,6 +4,10 @@ A script to produce "Size Productivity Trophic Level Charts" as described in
 
 >Froese, R., Palomares, M. L. D., Bailly, N., Coro, G., Garilao, C., Pauly, D. (2022) "A framework for the exploration of functional biodiversity".
 
+![Example](https://github.com/SISTA16/SizeProductivityTrophicLevelChart/raw/main/BioDiv_14_spt.jpg)
+
+The following code reports examples to run the script with different options. More examples can be found in the **usage_example_size_productivity_trophiclevel_chart.R** script.
+
 ```
 source("size_productivity_trophiclevel_chart.R")
 setwd("./")
@@ -38,5 +42,12 @@ sptchart(file=file,axes.labels=axes.labels)
 order.age.file = "./OrderAge.csv"
 #example 6 - produce the chart using custom order-age file
 sptchart(file=file,order.age.file=order.age.file)
+
+shapesToDisplay.file = "./shapesToDisplay.csv"
+#example 7 - display shapes at custom locations
+sptchart(file=file,shapesTodisplayFile = shapesToDisplay.file)
+
+#example 8 - display shapes and save
+sptchart(file=file,shapesTodisplayFile = shapesToDisplay.file, save.plot=T)
 
 ```
