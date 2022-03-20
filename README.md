@@ -4,6 +4,8 @@ A script to produce "Size Productivity Trophic Level Charts" as described in
 
 >Froese, R., Palomares, M. L. D., Bailly, N., Coro, G., Garilao, C., Pauly, D. (2022) "A framework for the exploration of functional biodiversity".
 
+![Example](https://github.com/SISTA16/SizeProductivityTrophicLevelChart/raw/main/BioDiv_14_spt.jpg)
+
 The following code reports examples to run the script with different options. More examples can be found in the **usage_example_size_productivity_trophiclevel_chart.R** script.
 
 ```
