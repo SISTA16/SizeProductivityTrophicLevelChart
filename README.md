@@ -1,5 +1,10 @@
 # Size Productivity Trophic Level Chart #
 
+A script to produce "Size Productivity Trophic Level Charts" as described in
+
+>Froese, R., Palomares, M. L. D., Bailly, N., Coro, G., Garilao, C., Pauly, D. (2022) "A framework for the exploration of functional biodiversity".
+
+
 ```
 source("size_productivity_trophiclevel_chart.R")
 setwd("./")
