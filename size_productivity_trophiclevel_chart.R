@@ -133,7 +133,7 @@ drawfish<-function(type, demersal=F, pelagic=F, reef=F, deepwater=F, troph.group
     lines(x=c(1,18)*xoff/asp+0.85,y=c(2,2)*yoff+tr+peloffset,lwd=2) # line for pelagic
   }else if (reef==T){
     lines(x=c(1,18)*xoff/asp+0.85,y=c(2,2)*yoff+tr+dmoffset,lwd=2) # line for demersal
-    lines(x=c(1,1)*xoff/asp+0.85,y=c(2,8)*yoff+tr+reefoffset,lwd=2) # 
+    lines(x=c(1,1)*xoff/asp+0.85,y=c(2,7)*yoff+tr+reefoffset,lwd=2) # vertical line for reef
   }
   if (deepwater==T){
     xs<-xs*xoff/asp+addoffx
