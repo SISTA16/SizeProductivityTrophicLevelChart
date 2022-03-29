@@ -133,7 +133,7 @@ drawfish<-function(type, demersal=F, pelagic=F, reef=F, deepwater=F, troph.group
     lines(x=c(1,18)*xoff/asp+0.85,y=c(2,2)*yoff+tr+peloffset,lwd=2) # line for pelagic
   }else if (reef==T){
     lines(x=c(1,18)*xoff/asp+0.85,y=c(2,2)*yoff+tr+dmoffset,lwd=2) # line for demersal
-    lines(x=c(1,1)*xoff/asp+0.85,y=c(2,5)*yoff+tr+reefoffset,lwd=2) # bottom line (same as demeral)
+    lines(x=c(1,1)*xoff/asp+0.85,y=c(2,8)*yoff+tr+reefoffset,lwd=2) # 
   }
   if (deepwater==T){
     xs<-xs*xoff/asp+addoffx
@@ -476,12 +476,12 @@ sptchart<-function(file,order.age.file,sp.classes.df=NA,axes.labels=NA, save.plo
     res.pos = 0.22+(0.25*(i-1))
     mtext(text=paste0("Tot:",sz.count[i]),at=sz.pos,side=1,line=0,outer=TRUE,cex=0.7)
     mtext(text=paste0("Tot:",res.count[length(res.grp)-i+1]),at=res.pos,side=2,line=0,outer=TRUE,cex=0.7)
-    resStats = paste0("FFMed:",
+    resStats = paste0("Med:",
                       format(res.median[length(res.grp)-i+1],digits=2),
                       " [",format(res.q5[length(res.grp)-i+1],digits=1),";",
                       format(res.q95[length(res.grp)-i+1],digits=1),"]")
     mtext(text=resStats,at=res.pos-0.12,side=2,line=0,outer=TRUE,cex=0.7)
-    sizeStats = paste0("FFMed:",
+    sizeStats = paste0("Med:",
                        format(sz.median[i],digits=2),
                        " [",format(sz.q5[i],digits=1),";",
                        format(sz.q95[i],digits=1),"]")
